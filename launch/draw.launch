@@ -5,6 +5,6 @@
     <node name ="commander_node" pkg="homework1" type="commander_node"/>
     <node name ="turtles_spawner" pkg="homework1_konstantin_evsey" type="turtles_spawner" output="screen"/>
     <node name ="start_service" pkg="homework1_konstantin_evsey" type="start_service"/>
-    <node name ="collector_node" pkg="homework1_konstantin_evsey" type="collector_node"/>
+    <node name ="collector_node" pkg="homework1_konstantin_evsey" type="collector_node" output="screen"/>
 
 </launch> 
