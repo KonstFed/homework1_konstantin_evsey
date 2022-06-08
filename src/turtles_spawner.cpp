@@ -32,11 +32,11 @@ void spawnTurtle(ros::NodeHandle n, ros::ServiceClient client, int x, int y, flo
 
     if (client.call(srv))
     {
-        ROS_INFO("Spawned turtle: '%s' successfully.",name);
+        ROS_INFO("Spawned turtle: '%s' successfully.",name.c_str());
     }
     else
     {
-        ROS_ERROR("Error while spawning turtle: '%s'.",name);
+        ROS_ERROR("Error while spawning turtle: '%s'.",name.c_str());
     }
 }
 
