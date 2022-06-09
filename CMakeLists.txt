@@ -215,3 +215,5 @@ target_link_libraries(collector_node ${catkin_LIBRARIES})
 add_executable(start_service src/start_service.cpp)
 target_link_libraries(start_service ${catkin_LIBRARIES})
 
+add_executable(mapper_node src/mapper_node.cpp)
+target_link_libraries(mapper_node ${catkin_LIBRARIES})
