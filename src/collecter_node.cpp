@@ -87,9 +87,9 @@ int main(int argc, char **argv)
     ros::NodeHandle n;
     
     ros::Subscriber sub_turtle1_cmd = n.subscribe("/turtle1_cmd",10,callback_turtle_cmd<1>);
-    ros::Subscriber sub_turtle2_cmd = n.subscribe("/turtle1_cmd",10,callback_turtle_cmd<2>);
-    ros::Subscriber sub_turtle3_cmd = n.subscribe("/turtle1_cmd",10,callback_turtle_cmd<3>);
-    ros::Subscriber sub_turtle4_cmd = n.subscribe("/turtle1_cmd",10,callback_turtle_cmd<4>);
+    ros::Subscriber sub_turtle2_cmd = n.subscribe("/turtle2_cmd",10,callback_turtle_cmd<2>);
+    ros::Subscriber sub_turtle3_cmd = n.subscribe("/turtle3_cmd",10,callback_turtle_cmd<3>);
+    ros::Subscriber sub_turtle4_cmd = n.subscribe("/turtle4_cmd",10,callback_turtle_cmd<4>);
 
     // ros::Subscriber sub_turtle1_pose = n.subscribe("/turtle2/pose",10,callback_turtle1_cmd);
     // ros::Subscriber sub_turtle2_pose = n.subscribe("/turtle3/pose",10,callback_turtle2_cmd);
