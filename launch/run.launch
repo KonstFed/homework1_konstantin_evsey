@@ -6,4 +6,5 @@
     <node name ="start_service" pkg="homework1_konstantin_evsey" type="start_service"/>
     <node name ="collector_node" pkg="homework1_konstantin_evsey" type="collector_node" output="screen"/>
     <node name ="mapper_node" pkg="homework1_konstantin_evsey" type="mapper_node" output="screen"/>
+    <node pkg="rosservice" type="rosservice" name="rosservice" args="call /start"/> <!--We need this to call the start service-->
 </launch> 
