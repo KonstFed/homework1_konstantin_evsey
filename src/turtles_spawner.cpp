@@ -25,7 +25,7 @@ void deleteTurtle(ros::NodeHandle n)
 void spawnTurtle(ros::NodeHandle n, ros::ServiceClient client, int x, int y, float theta, std::string name)
 {
     turtlesim::Spawn srv;
-    srv.request.name;
+    srv.request.name = name;
     srv.request.x = x;
     srv.request.y = y;
     srv.request.theta = theta;
