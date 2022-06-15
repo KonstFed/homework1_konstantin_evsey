@@ -9,7 +9,7 @@ const char* SERVICE_SPAWN_TURTLE = "/spawn";
 
 void deleteTurtle(ros::NodeHandle n)
 {
-    ros::ServiceClient client = n.serviceClient<turtlesim::Kill>(SERVICE_KILL_TURTLE);
+    ros::ServiceClient client = n.serviceClient<turtlesim::Kill>("/kill");
     turtlesim::Kill srv;
     srv.request.name = "turtle1";
     if (client.call(srv))

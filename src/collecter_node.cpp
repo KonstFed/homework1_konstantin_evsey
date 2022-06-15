@@ -21,7 +21,6 @@ ros::Publisher pub_turtles_poses;
 
 void send_turtles_cmd()
 {
-    ROS_INFO("send_turtles_cmd is called.");
     pub_turtles_cmd.publish(msg_cmd);
     listened[0] = false;
     listened[1] = false;
@@ -30,7 +29,6 @@ void send_turtles_cmd()
 }
 
 void send_turtles_poses() {
-    ROS_INFO("send_turtles_poses is called.");
     pub_turtles_poses.publish(msg_poses);
     listenedPoses[0] = false;
     listenedPoses[1] = false;
